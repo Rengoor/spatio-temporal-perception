@@ -1,0 +1,32 @@
+# C++ Build & System Artifacts
+build/
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+.DS_Store
+
+# Python Environment & Caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ML Weights & Model Exports (Keep directory structure but ignore files)
+weights/*
+!.keep
+*.pt
+*.onnx
+
+# Datasets & Media Output
+ml_pipeline/data/openloris/
+output/*
+!.keep
+*.mp4
+*.avi
+
+# MLOps & Tracking Local Artifacts
+mlruns/
+.fiftyone/

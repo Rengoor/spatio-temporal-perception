@@ -1,0 +1,17 @@
+# Core Deep Learning & Computer Vision
+torch>=2.2.0
+torchvision>=0.17.0
+opencv-python>=4.9.0.80
+numpy>=1.24.0,<2.0.0
+
+# Model Architecture Support
+ultralytics==8.2.0  # Used for YOLOv10 base configurations and structures
+pyyaml>=6.0.1
+
+# MLOps, Dataset Curation & Tracking
+fiftyone>=0.23.0
+mlflow>=2.11.0
+
+# Utilities
+tqdm>=4.66.0
+pandas>=2.0.0
