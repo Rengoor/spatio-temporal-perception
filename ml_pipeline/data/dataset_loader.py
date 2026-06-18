@@ -76,13 +76,14 @@ def get_spatio_temporal_dataloader(
         frame_dir=frame_dir, sequence_length=sequence_length
     )
 
-    # pin_memory=True speeds up tensor transfers from Host CPU to the M4's Unified Memory
+    should_pin = torch.cuda.is_available()
+
     dataloader = DataLoader(
         dataset,
         batch_size=batch_size,
         shuffle=shuffle,
         num_workers=num_workers,
-        pin_memory=True,
+        pin_memory=should_pin,
     )
     return dataloader
 
